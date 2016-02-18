@@ -1,0 +1,60 @@
+<!-- ================================================
+	index12-test.html
+================================================ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name=description content="初めてのHTML文章。">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="favicon.ico">
+	<title>form-solve（HTML5）</title>
+</head>
+<body>
+	<p>form-test（HTML5）※ソース表示して確認してください。</p>
+	<h4>下記問題</h4>
+	<hr>
+
+	<section>
+		<p id="rnw">フォーム</p>
+
+		<form action="./index12-solve.html" method="GET">
+			<legend>ログインしてください。</legend>
+			<input type="email" name="email" placeholder="Eメールを入力してください。xxxx@xxxx.xx">
+			<input type="password" name="password" placeholder="パスワードを入力してください。8文字以上です。">
+			<p>性別</p>
+			<p>
+				<label for="female">女性</label>
+				<input type="radio" name="gender" value="female" id="female" checked>
+				<label for="male">男性</label>
+				<input type="radio" name="gender" value="male" id="male">
+			</p>
+			<p>役職</p>
+			<p>
+				<label for="leader">リーダー</label>
+				<input type="checkbox" name="level" value="リーダー" id="leader">
+				<label for="subleader">サブリーダー</label>
+				<input type="checkbox" name="level" value="サブリーダー" id="subleader">
+				<label for="syunin">主任</label>
+				<input type="checkbox" name="level" value="主任" id="syunin">
+			</p>
+			<p>リージョン（都市）</p>
+			<p>
+				<select name="region">
+					<option value="asia">アジア</option>
+					<option value="northamerica">北アメリカ</option>
+					<option value="southamerica" selected>南アメリカ</option>
+					<option value="europa">ヨーロッパ</option>
+				</select>
+			</p>
+			<input type="hidden" name="user_id" value="@rnw">
+			<button>キャンセル</button>
+			<input type="submit" name="submit" value="submit">
+		</form>
+
+	</section>
+
+</body>
+</html>
